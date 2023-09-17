@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.nav-links a:hover {
+    text-decoration: solid;
+    text-decoration-line:underline;
+}
+
+
+/* Search section styles */
+.search-section {
+    background-color: #006699;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.search-form {
+    margin-top: 20px;
+}
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+    background-color: #003366;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.products-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.Our-explaination{
+    align-items: center;
+    max-width: 200px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.Our-explaination p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.body-menu{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 100px;
+}
+.sellers{
+    align-items: center;
+    max-width: 300px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #4bb7ec;
+    color: white;
+}
+.sellers p{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: inherit;
+}
+.sellers h2{
+   text-align: center;
+}
+.sellers a:hover{
+    text-decoration: underline;
+ }

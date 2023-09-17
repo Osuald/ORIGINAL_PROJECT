@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bestperformstyle.css">
+    <title>SBR Marketplace</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to SBR Marketplace</h1>
+        <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            
+            <ul class="menu" id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+// Add click event listener to the hamburger icon
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+    </script>
+
+    <main>
+        <section class="search-section">
+            <h2>Search for Products</h2>
+            <form>
+                <input type="text" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="product-list">
+            <h2>Available Products</h2>
+            <ul>
+                <li>
+                    <h3>Product Name 1</h3>
+                    <p>Price: $XX.XX</p>
+                    <p>Location: Nearby Location 1</p>
+                </li>
+                <li>
+                    <h3>Product Name 2</h3>
+                    <p>Price: $XX.XX</p>
+                    <p>Location: Nearby Location 2</p>
+                </li>
+                <!-- More product items -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SBR Marketplace. All rights reserved.</p>
+    </footer>
+</body>
+</html>

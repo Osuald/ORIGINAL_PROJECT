@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(rgba(0,0,0,0,0), rgba(0,0,0,0.60)), url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 1px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul li{
+    background-color: black;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    opacity: .8;
+    font-size: 20px;
+}
+header .navigation a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover ul li ul li{
+    display: none;
+}
+ul li:hover ul li:hover ul li{
+    display: block;
+}
+header .navigation a:not(:last-child){
+    margin-right: 10px;
+}
+header .navigation a:hover{
+    background : green;
+}
+.content{
+    display: block;
+    position: relative;
+    align-items: center;
+    
+}
+.navigation .active{
+    background-color: green;
+}
+.content .heading a{
+    text-transform: uppercase;
+    line-height:60px;
+    margin-bottom:60px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    transition-property: background;
+}
+.content .heading a:hover{
+    background: green;
+    text-decoration: none;
+}
+.content .titles{
+    font-size: 16px;
+    margin: 40px 100px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.content h3{
+    font-weight: 500;
+    text-align: justify;
+}
+.content a{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    transition-property: background;
+}
+.content a:hover{
+    text-decoration-line: underline;
+}
+.down-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(logo.jpg);
+}
+.down-panel .location{
+    margin-right: 100px;
+}
+.down-panel .media-icons{
+    margin-right: 100px;
+}
+.down-panel .media-icons a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+.down-panel .media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+.down-panel .media-icons i:hover{
+    transform: scale(1.5)
+}
+label{
+    display: none;
+}
+#check {
+    z-index: 3;
+    display: none;
+}
+/*Responsive styles*/
+@media (max-width: 960px) {
+    header .navigation{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+    label:hover{
+        color: #fff;
+    }
+    label .close-btn{
+        display: none;
+    }
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background: rgb(114, 211, 255);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #check:checked ~ header .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+    #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+    label .menu-btn{
+        position: absolute;
+    }
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+    }
+    .content .heading{
+        font-size: 45px;
+
+    }
+    .content .titles{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .content h3{
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 960px){
+    .content .heading{
+        font-size: 35px;
+
+    }
+    .content .titles{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .content h3{
+        font-size: 14px;
+    }
+
+}
+
+
